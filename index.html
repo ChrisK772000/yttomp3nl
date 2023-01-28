@@ -1,0 +1,55 @@
+<html>
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NKV5QQ3XXG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NKV5QQ3XXG');
+</script>
+  <link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8">
+  <meta name="keywords" content="youtube,mp3,converter,download,music">
+  <meta name="description" content="Convert YouTube videos to MP3 files easily and quickly. Download your favorite music from YouTube and listen offline. High-quality MP3s and no registration required.">
+
+	<title>YoutubeToMp3.nl | Youtube Converter</title>
+</head>
+<body>
+
+<div style="text-align:center">
+     <a href="https://youtube.com/"><img src="https://i.ibb.co/vZNg5dB/clipart2024576.png" style="width: 15%; "alt="youtubetomp3converter"></a>
+</div>
+<form id="form" method="GET" action="https://convert2mp3s.com/api/widget" onsubmit="return validateUrl()">
+        <input id="url" name="url" placeholder="Please enter your Youtube Url">
+        <br/>
+        <br/>
+        <input type="submit" value="Convert now!">
+    </form>
+
+
+<div style="text-align:center">
+  <h3> Why YoutubeToMp3.nl?</h3>
+  <p style="font-weight: bold;">Easily convert YouTube videos to high-quality MP3 with our user-friendly YouTube to MP3 converter.<br> No registration required. Compatible with multiple devices and fast conversion. Mobile-friendly and secure,<br> perfect for downloading favorite songs and listening offline.</p>
+
+
+
+<script>
+  function validateUrl() {
+    var url = document.getElementById("url").value;
+    var pattern = /^(https?:\/\/)?(www\.)?youtube\.com\/watch\?v=[a-zA-Z0-9-_]+/;
+    if(!pattern.test(url)) {
+        alert("Please enter a valid YouTube URL");
+        return false;
+    }
+    return true;
+  }
+</script>
+
+<footer>
+  <p style="color: black;">This site was made with ❤️ by Chris Knoop | Special Thanks to <a href="https://github.com/matthew-asuncion">Matthew Asuncion</p>
+</footer>
+</body>
+</html>
